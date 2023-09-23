@@ -1,9 +1,9 @@
 # Comandos para utilizar git con el proyecto
 
 1. git clone: permite clonar el repositorio remoto en el repositorio local
-    ```bash
+```bash
     git clone {url del repositorio}
-    ```
+```
 2. git status: ver el estado de los archivos en el repositorio local
 3. git add: agregar archivos al stage para ser guardados
 ```bash
