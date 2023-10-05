@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_app_mobiles/views/screens/Foro/topics/NewAnswer/NewAnswer.dart';
 
 class TopicTwo extends StatefulWidget{
   const TopicTwo({super.key});
@@ -16,7 +17,12 @@ class _TopicTwoState extends State<TopicTwo>{
         backgroundColor: const Color.fromARGB(255, 106, 107, 107),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
+        onPressed: (){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const NewAnswer())
+          );
+        },
         child: const Icon(Icons.create_rounded),
         backgroundColor: const Color.fromARGB(255, 106, 107, 107),
         
