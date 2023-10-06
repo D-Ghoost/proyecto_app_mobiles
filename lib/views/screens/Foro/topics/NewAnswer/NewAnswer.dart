@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_app_mobiles/views/screens/Foro/topics/TopicTwo.dart';
 
 class NewAnswer extends StatefulWidget{
   const NewAnswer ({ super.key });
@@ -40,12 +41,24 @@ class _NewAnswerState extends State<NewAnswer>{
               ),
             ),
             Container(
-              padding: EdgeInsets.only(left: 20, right: 20),
+              padding: const EdgeInsets.only(left: 20, right: 20),
               child: TextFormField(
                 decoration: const InputDecoration(
                   hintText: 'Da tu mejor consejo',
                 ),
                 cursorHeight: 25,
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.only(left: 20, right: 20, top: 40),
+              child: ElevatedButton(
+                onPressed: (){
+                  Navigator.pop(
+                    context,
+                    MaterialPageRoute(builder: (context) => const TopicTwo())
+                  );
+                },
+                child: const Text('Publicar'),
               ),
             )
           ],
