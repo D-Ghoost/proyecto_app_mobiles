@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/src/services/asset_bundle.dart';
 
-/*void main() {
+void main() {
   runApp(HomePage());
 }
 
@@ -15,8 +16,8 @@ class _HomePageState extends State<HomePage>{
   Widget build (BuildContext context){
     return MaterialApp(
         theme: ThemeData(
-            primaryColorLight: Colors.white,
-            primarySwatch: Colors.indigo,
+          primaryColorLight: Colors.white,
+          primarySwatch: Colors.indigo,
         ),
         debugShowCheckedModeBanner: false,
         home: Scaffold(
@@ -43,16 +44,16 @@ class _HomePageState extends State<HomePage>{
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
-                      
+
                       TextButton(
-                      style: ButtonStyle(
-                        foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+                        style: ButtonStyle(
+                          foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
                         ),
                         onPressed: () { },
-                        child: 
-                          const Icon(Icons.arrow_back),
+                        child:
+                        const Icon(Icons.arrow_back),
 
-                        ),
+                      ),
                     ],
                   ),
                   CircleAvatar(
@@ -71,13 +72,13 @@ class _HomePageState extends State<HomePage>{
                         textAlign: TextAlign.center,
                         overflow: TextOverflow.ellipsis,
                         style:
-                            GoogleFonts.mukta(
+                        GoogleFonts.mukta(
 
-                                color: Colors.indigoAccent,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 40,
-                              ),
-                            )
+                          color: Colors.indigoAccent,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 40,
+                        ),
+                      )
                     ],
                   ),
                   Row(
@@ -97,17 +98,17 @@ class _HomePageState extends State<HomePage>{
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       InkWell(
-                        splashColor: Colors.black26,
-                        onTap: () {},
-                        child:
-                            Ink.image(
-                              image:AssetImage("assets/confi.png"),
-                              height: 50,
-                              width: 50,
-                              fit: BoxFit.cover,)
+                          splashColor: Colors.black26,
+                          onTap: () {},
+                          child:
+                          Ink.image(
+                            image:AssetImage('assets/imagenes/confi.png'),
+                            height: 50,
+                            width: 50,
+                            fit: BoxFit.cover,)
 
-                          ),
-                        Text(
+                      ),
+                      Text(
                         'Configuracion.',
                         textAlign: TextAlign.center,
                         overflow: TextOverflow.ellipsis,
@@ -125,9 +126,9 @@ class _HomePageState extends State<HomePage>{
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Ink.image(
-                        image: AssetImage("assets/user.png"),
-                        height: 80,
-                        width: 80,),
+                        image: AssetImage("assets/imagenes/user.png"),
+                        height: 50,
+                        width: 50,),
                       Column(
                         children: [Text(
                           'Gestion De',
@@ -182,5 +183,5 @@ class _HomePageState extends State<HomePage>{
         )
     );
   }
-}*/
+}
 //Autora ||Andrea Gonzalez Diaz||  \_(°_°)_/
