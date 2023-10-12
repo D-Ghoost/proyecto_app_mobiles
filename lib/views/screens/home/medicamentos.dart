@@ -12,7 +12,7 @@ class HomePage extends StatefulWidget{
 class _HomePageState extends State<HomePage>{
   var _currentSelectTime=TimeOfDay.now();
   void callTimePicker() async{
-    //var  selectedTime =await getTimePickerWiddget();
+    var  selectedTime =await getTimePickerWiddget();
     setState(() {
       _currentSelectTime=TimeOfDay.now();
     });
@@ -70,17 +70,17 @@ class _HomePageState extends State<HomePage>{
                     ),
                   ),
                   Text(
-                        'Acetaminofen.',
-                        textAlign: TextAlign.center,
-                        overflow: TextOverflow.ellipsis,
-                        style:
-                        GoogleFonts.mukta(
+                    'Acetaminofen.',
+                    textAlign: TextAlign.center,
+                    overflow: TextOverflow.ellipsis,
+                    style:
+                    GoogleFonts.mukta(
 
-                          color: Colors.indigoAccent,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 40,
-                        ),
-                      ),
+                      color: Colors.indigoAccent,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 40,
+                    ),
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -140,71 +140,77 @@ class _HomePageState extends State<HomePage>{
                   ),
                   Container(
 
-                    //decoration: BoxDecoration(
-                      //borderRadius: BorderRadius.circular(10),
-                    //),
-                    color: Colors.indigo,
+                    decoration: BoxDecoration(
+                      color: Colors.indigo,
+                      border: Border.all(
+                        color: Colors.indigo,
+                        width: 8,
+                      ),
+                      borderRadius: BorderRadius.circular(20),
+
+                    ),
+
                     child:
-                        Column(
-                          children: [
-                          Text(
+                    Column(
+                      children: [
+                        Text(
                           'Elige los dias',
                           textAlign: TextAlign.center,
-                            overflow: TextOverflow.ellipsis,
-                            style:
-                            GoogleFonts.mukta(
-                              color: Colors.indigoAccent,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 30,
-                            ),
-                           ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                FloatingActionButton.extended(
+                          overflow: TextOverflow.ellipsis,
+                          style:
+                          GoogleFonts.mukta(
+                            color: Colors.indigoAccent,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                          ),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            FloatingActionButton.extended(
 
-                                  onPressed: (){
-                                  },
-                                  label: const Text("L",) ,
-                                ),
-                                FloatingActionButton.extended(
-                                  onPressed: (){
-                                  },
-                                  label: const Text("M") ,
-                                ),
-                                FloatingActionButton.extended(
-                                  onPressed: (){
-                                  },
-                                  label: const Text("X") ,
-                                ),
-                                FloatingActionButton.extended(
-                                  onPressed: (){
-                                  },
-                                  label: const Text("J") ,
-                                ),
-                                FloatingActionButton.extended(
-                                  onPressed: (){
-                                  },
-                                  label: const Text("V") ,
-                                ),
-                                FloatingActionButton.extended(
-                                  onPressed: (){
-                                  },
-                                  label: const Text("S") ,
-                                ),
-                                FloatingActionButton.extended(
-                                  onPressed: (){
-                                  },
-                                  label: const Text("D") ,
-                                ),
-                              ],
-
+                              onPressed: (){
+                              },
+                              label: const Text("L",) ,
                             ),
-                            SizedBox(
-                              height: 40,
-                              width: 20,
-                            )
+                            FloatingActionButton.extended(
+                              onPressed: (){
+                              },
+                              label: const Text("M") ,
+                            ),
+                            FloatingActionButton.extended(
+                              onPressed: (){
+                              },
+                              label: const Text("X") ,
+                            ),
+                            FloatingActionButton.extended(
+                              onPressed: (){
+                              },
+                              label: const Text("J") ,
+                            ),
+                            FloatingActionButton.extended(
+                              onPressed: (){
+                              },
+                              label: const Text("V") ,
+                            ),
+                            FloatingActionButton.extended(
+                              onPressed: (){
+                              },
+                              label: const Text("S") ,
+                            ),
+                            FloatingActionButton.extended(
+                              onPressed: (){
+                              },
+                              label: const Text("D") ,
+                            ),
                           ],
+
+                        ),
+                        SizedBox(
+                          height: 40,
+                          width: 20,
+                        )
+                      ],
                     ),
                   ),
                   SizedBox(
@@ -214,20 +220,21 @@ class _HomePageState extends State<HomePage>{
                     children: [
 
                       FloatingActionButton.extended(
-                          onPressed: callTimePicker,
+                          onPressed: callTimePicker
+                          ,
                           icon: const Icon(Icons.alarm),
                           label: const Text("Horario"))
                     ],
                   ),
                   SizedBox(
-                    height:50,
+                    height:100,
                   ),
                   FloatingActionButton.extended(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      onPressed: (){},
-                      label: const Text("Listo"),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    onPressed: (){},
+                    label: const Text("Listo"),
                   )
                 ],
               ),
@@ -236,15 +243,15 @@ class _HomePageState extends State<HomePage>{
         )
     );
   }
-  // Future<TimeOfDay?>getTimePickerWiddget() {
-  //   return showTimePicker(
-  //       context: context,
-  //       initialTime: _currentSelectTime,
-  //       builder: (context,child){
-  //         return Theme(data: ThemeData.light(),child: child);
-  //       }
-  //       );
-  // }
+ Future<TimeOfDay?>getTimePickerWiddget() {
+   return showTimePicker(
+      context: context,
+       initialTime: _currentSelectTime,
+      builder: (context,child){
+         return Theme(data: ThemeData.light(),child: child!);
+       }
+       );
+ }
 }
 
 
