@@ -12,8 +12,6 @@ class _HomePageState extends State<HomePage>{
   String _nombres ="";
   String _responsable ="";
   String _telefoResponsable ="";
-  String _password ="";
-  String _OKpassword ="";
 
   @override
   Widget build (BuildContext context){
@@ -69,29 +67,29 @@ class _HomePageState extends State<HomePage>{
                   ),
                   Text(
 
-                        'Maria R.',
-                        textAlign: TextAlign.center,
-                        overflow: TextOverflow.ellipsis,
-                        style:
-                        GoogleFonts.mukta(
+                    'Maria R.',
+                    textAlign: TextAlign.center,
+                    overflow: TextOverflow.ellipsis,
+                    style:
+                    GoogleFonts.mukta(
 
-                          color: Colors.indigoAccent,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 40,
-                        ),
-                      ),
+                      color: Colors.indigoAccent,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 40,
+                    ),
+                  ),
                   Text(
-                        'Condicion: Epilepcia',
-                        textAlign: TextAlign.center,
-                        overflow: TextOverflow.ellipsis,
-                        style:
-                        GoogleFonts.mukta(
+                    'Condicion: Epilepcia',
+                    textAlign: TextAlign.center,
+                    overflow: TextOverflow.ellipsis,
+                    style:
+                    GoogleFonts.mukta(
 
-                          color: Colors.indigoAccent,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                        ),
-                      ),
+                      color: Colors.indigoAccent,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
                   Row(
                     children: [
                       Text(
@@ -110,20 +108,20 @@ class _HomePageState extends State<HomePage>{
                   ),
                   Container(),
                   TextField(
-                        obscureText: false,
-                        decoration: InputDecoration(
-                            border: InputBorder.none,
-                            labelText: 'Maria Paula Romero Linares',
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      labelText: 'Maria Paula Romero Linares',
 
 
-                        ),
-                        onChanged: (String nombre) {
+                    ),
+                    onChanged: (String nombre) {
 
-                          setState(() {
-                            _nombres = nombre;
-                          });
-                        },
-                      ),
+                      setState(() {
+                        _nombres = nombre;
+                      });
+                    },
+                  ),
                   Text(_nombres),
                   Row(
                     children: [
