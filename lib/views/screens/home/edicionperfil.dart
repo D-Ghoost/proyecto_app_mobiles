@@ -191,6 +191,7 @@ class _Editarperfil extends State<edicionperfil>{
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       FloatingActionButton.extended(
+                        heroTag: "btnEd1",
                         onPressed: (){
                           
                         },

@@ -90,6 +90,7 @@ class _MenuUsuario extends State<menuusuario>{
                     children: [
                       const SizedBox(width: 16),
                       FloatingActionButton.extended(
+                        heroTag: "btnMen1",
                         label: const Text('Editar Perfil'),
                         onPressed: () {
                           //
@@ -169,6 +170,7 @@ class _MenuUsuario extends State<menuusuario>{
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       FloatingActionButton.extended(
+                        heroTag: "btnMen2",
                         onPressed: (){
                         },
                         label: const Text("Salir") ,

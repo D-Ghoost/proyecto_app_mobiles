@@ -125,6 +125,7 @@ class _Medicamentos extends State<medicamentos>{
 
                       ),
                       FloatingActionButton.extended(
+                        heroTag: "btnMed0",
                         onPressed: (){
                         },
                         label: const Text("Programar") ,
@@ -172,37 +173,43 @@ class _Medicamentos extends State<medicamentos>{
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             FloatingActionButton.extended(
-
+                              heroTag: "btnMed1",
                               onPressed: (){
                               },
                               label: const Text("L",) ,
                             ),
                             FloatingActionButton.extended(
+                              heroTag: "btnMed2",
                               onPressed: (){
                               },
                               label: const Text("M") ,
                             ),
                             FloatingActionButton.extended(
+                              heroTag: "btnMed3",
                               onPressed: (){
                               },
                               label: const Text("X") ,
                             ),
                             FloatingActionButton.extended(
+                              heroTag: "btnMed4",
                               onPressed: (){
                               },
                               label: const Text("J") ,
                             ),
                             FloatingActionButton.extended(
+                              heroTag: "btnMed5",
                               onPressed: (){
                               },
                               label: const Text("V") ,
                             ),
                             FloatingActionButton.extended(
+                              heroTag: "btnMed6",
                               onPressed: (){
                               },
                               label: const Text("S") ,
                             ),
                             FloatingActionButton.extended(
+                              heroTag: "btnMed7",
                               onPressed: (){
                               },
                               label: const Text("D") ,
@@ -224,6 +231,7 @@ class _Medicamentos extends State<medicamentos>{
                     children: [
 
                       FloatingActionButton.extended(
+                        heroTag: "btnMed8",
                           onPressed: callTimePicker
                           ,
                           icon: const Icon(Icons.alarm),
@@ -234,6 +242,7 @@ class _Medicamentos extends State<medicamentos>{
                     height:100,
                   ),
                   FloatingActionButton.extended(
+                    heroTag: "btnMed9",
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
