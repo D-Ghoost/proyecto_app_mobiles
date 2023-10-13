@@ -66,6 +66,7 @@ class _ForoState extends State<Foro>{
                   ),
                 ),
                 Container(
+                  // Hacer slider
                   child: Row(
                     children: <Widget>[
                       TextButton(
@@ -75,10 +76,6 @@ class _ForoState extends State<Foro>{
                       TextButton(
                         onPressed: (){},
                         child: const Text('#hipertension'),
-                      ),
-                      TextButton(
-                        onPressed: (){},
-                        child: const Text('#comida'),
                       ),
                       TextButton(
                         onPressed: (){},

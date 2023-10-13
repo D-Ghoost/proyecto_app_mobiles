@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_app_mobiles/views/screens/Home/HomeSlidershow.dart';
 
 class Home extends StatefulWidget{
   const Home ({ super.key });
@@ -8,6 +9,44 @@ class Home extends StatefulWidget{
 }
 
 class _HomeState extends State<Home>{
+
+  // final List<Widget> buttonViews = [
+    
+
+  //   Container(
+  //     child: const Text("Medicamentos"),
+  //   ),
+  //   Container(
+  //     child: const Text("Usuario"),
+  //   ),
+  //   Container(
+  //     child: const Text("Foro"),
+  //   )
+  // ];
+
+  final List buttonViews = [
+    [
+      'Foro',
+      Colors.blue,
+      "/foro"
+    ],
+    [
+      'Medicamentos',
+      const Color.fromARGB(255, 0, 70, 161),
+      "/foro"
+    ],
+    [
+      'Agregar Medicamento',
+      Colors.blue,
+      "/foro"
+    ],
+    [
+      'Editar perfil',
+      const Color.fromARGB(255, 0, 70, 161),
+      "/foro"
+    ],
+  ];
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -74,7 +113,7 @@ class _HomeState extends State<Home>{
                     const SizedBox(
                       height: 30,
                     ),
-                    
+                    HomeSliderShow(buttons: buttonViews)
                   ],
                 )
             ),

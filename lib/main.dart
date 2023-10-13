@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_app_mobiles/views/screens/Foro/foro.dart';
 import 'package:proyecto_app_mobiles/views/screens/Home/Home.dart';
 
 void main() {
@@ -10,9 +11,16 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       title: 'Foro Flutter',
-      home: Home()
+      routes: {
+        "/":(context) => const Home(),
+        "/foro":(context) =>  const Foro(),
+        // "/medicamentos": (context) => const Medicamentos(),
+        // "/edicion":(context) => const EdicionPerfil(),
+        // "/add-medicamentos": (context) => const MyApp()
+      },
+      initialRoute: "/",
     );
   }
 }
