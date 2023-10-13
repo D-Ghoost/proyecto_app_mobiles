@@ -29,6 +29,7 @@
 ```bash
     git checkout {nombre de la rama}
 ```
+
 ## Como hacer un pull request
 1. Crear una rama con el nombre de la funcionalidad que se va a desarrollar
 2. Hacer los cambios en la rama
@@ -39,3 +40,9 @@
 7. Agregar un titulo y una descripcion al pull request
 8. Crear el pull request
 9. Esperar a que el pull request sea aprobado y mergeado
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  mvvm: ^0.5.2
+  local_auth: ^2.1.7
