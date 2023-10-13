@@ -2,14 +2,14 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 void main() {
-  runApp(HomePage());
+  runApp(medicamentos());
 }
 
-class HomePage extends StatefulWidget{
-  State<HomePage> createState()=> _HomePageState();
+class medicamentos extends StatefulWidget{
+  State<medicamentos> createState()=> _Medicamentos();
 }
 
-class _HomePageState extends State<HomePage>{
+class _Medicamentos extends State<medicamentos>{
   var _currentSelectTime=TimeOfDay.now();
   void callTimePicker() async{
     var  selectedTime =await getTimePickerWiddget();
