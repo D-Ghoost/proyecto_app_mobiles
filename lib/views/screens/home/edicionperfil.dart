@@ -4,11 +4,11 @@ void main() {
   runApp(HomePage());
 }
 
-class HomePage extends StatefulWidget{
-  State<HomePage> createState()=> _HomePageState();
+class edicionperfil extends StatefulWidget{
+  State<edicionperfil> createState()=> _Editarperfil();
 }
 
-class _HomePageState extends State<HomePage>{
+class _Editarperfil extends State<edicionperfil>{
   String _nombres ="";
   String _responsable ="";
   String _telefoResponsable ="";
