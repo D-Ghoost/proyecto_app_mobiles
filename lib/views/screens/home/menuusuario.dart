@@ -7,6 +7,8 @@ void main() {
 }
 
 class menuusuario extends StatefulWidget{
+  const menuusuario ({ super.key });
+  @override
   State<menuusuario> createState()=> _MenuUsuario();
 }
 
@@ -49,7 +51,9 @@ class _MenuUsuario extends State<menuusuario>{
                         style: ButtonStyle(
                           foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
                         ),
-                        onPressed: () { },
+                        onPressed: () {
+                          Navigator.pop(context);
+                         },
                         child:
                         const Icon(Icons.arrow_back),
 

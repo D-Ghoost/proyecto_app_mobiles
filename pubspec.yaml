@@ -10,6 +10,10 @@ dependencies:
   flutter:
     sdk: flutter
   card_swiper: 3.0.1
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  mvvm: ^0.5.2
+  local_auth: ^2.1.7
 
 dev_dependencies:
   flutter_test:

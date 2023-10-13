@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 void main() {
-  runApp(HomePage());
+  runApp(edicionperfil());
 }
 
 class edicionperfil extends StatefulWidget{
+   const edicionperfil ({ super.key });
+
+  @override
   State<edicionperfil> createState()=> _Editarperfil();
 }
 
@@ -46,7 +49,9 @@ class _Editarperfil extends State<edicionperfil>{
                         style: ButtonStyle(
                           foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
                         ),
-                        onPressed: () { },
+                        onPressed: () {
+                          Navigator.pop(context);
+                         },
                         child:
                         const Icon(Icons.arrow_back),
 
@@ -187,6 +192,7 @@ class _Editarperfil extends State<edicionperfil>{
                     children: [
                       FloatingActionButton.extended(
                         onPressed: (){
+                          
                         },
                         label: const Text("GUARDAR"),
                       ),

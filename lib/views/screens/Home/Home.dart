@@ -10,19 +10,6 @@ class Home extends StatefulWidget{
 
 class _HomeState extends State<Home>{
 
-  // final List<Widget> buttonViews = [
-    
-
-  //   Container(
-  //     child: const Text("Medicamentos"),
-  //   ),
-  //   Container(
-  //     child: const Text("Usuario"),
-  //   ),
-  //   Container(
-  //     child: const Text("Foro"),
-  //   )
-  // ];
 
   final List buttonViews = [
     [
@@ -33,7 +20,7 @@ class _HomeState extends State<Home>{
     [
       'Medicamentos',
       const Color.fromARGB(255, 0, 70, 161),
-      "/foro"
+      "/medicamentos"
     ],
     [
       'Agregar Medicamento',
@@ -43,7 +30,12 @@ class _HomeState extends State<Home>{
     [
       'Editar perfil',
       const Color.fromARGB(255, 0, 70, 161),
-      "/foro"
+      "/edicion"
+    ],
+    [
+      'Usuario',
+      Colors.blue,
+      "/usuario"
     ],
   ];
 

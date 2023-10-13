@@ -6,13 +6,16 @@ void main() {
 }
 
 class medicamentos extends StatefulWidget{
+  const medicamentos({ super.key });
+
+  @override
   State<medicamentos> createState()=> _Medicamentos();
 }
 
 class _Medicamentos extends State<medicamentos>{
   var _currentSelectTime=TimeOfDay.now();
   void callTimePicker() async{
-    var  selectedTime =await getTimePickerWiddget();
+    // var  selectedTime =await getTimePickerWiddget();
     setState(() {
       _currentSelectTime=TimeOfDay.now();
     });
@@ -50,7 +53,9 @@ class _Medicamentos extends State<medicamentos>{
                         style: ButtonStyle(
                           foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
                         ),
-                        onPressed: () { },
+                        onPressed: () { 
+                          Navigator.pop(context);
+                        },
                         child:
                         const Icon(Icons.arrow_back),
 
@@ -73,8 +78,7 @@ class _Medicamentos extends State<medicamentos>{
                     'Acetaminofen.',
                     textAlign: TextAlign.center,
                     overflow: TextOverflow.ellipsis,
-                    style:
-                    GoogleFonts.mukta(
+                    style: GoogleFonts.mukta(
 
                       color: Colors.indigoAccent,
                       fontWeight: FontWeight.bold,
