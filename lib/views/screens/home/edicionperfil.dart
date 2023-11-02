@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 void main() {
-  runApp(HomePage());
+  runApp(EdcionPerfil());
 }
 
-class edicionperfil extends StatefulWidget{
-  State<edicionperfil> createState()=> _Editarperfil();
+class EdicionPerfil extends StatefulWidget{
+  State<EdicionPerfil> createState()=> _Editarperfil();
 }
 
-class _Editarperfil extends State<edicionperfil>{
+class _Editarperfil extends State<EdicionPerfil>{
   String _nombres ="";
   String _responsable ="";
   String _telefoResponsable ="";
