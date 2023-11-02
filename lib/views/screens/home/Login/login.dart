@@ -24,20 +24,20 @@ class _HomeState extends State<Login> {
         body: Stack(
       children: [
         Container(
-          color: Colors.grey[200],
+          color: Colors.white,
         ),
         Column(
           children: [
             Container(
               alignment: Alignment.center,
-              margin: const EdgeInsets.only(top: 40),
+              margin: const EdgeInsets.only(top: 30),
               child: const CircleAvatar(
                 maxRadius: 120,
-                minRadius: 60,
-                backgroundColor: Colors.black,
+                minRadius: 50,
+                backgroundColor: Colors.indigo,
                 //child: Padding(padding: EdgeInsets.all(50)),
                 backgroundImage: NetworkImage(
-                    'https://s1.ppllstatics.com/lasprovincias/www/multimedia/202112/12/media/cortadas/gatos-kb2-U160232243326NVC-624x385@Las%20Provincias.jpg'),
+                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPnpo6pVkLA1nGN6JXSlAzR6wBDghofcTfcQ&usqp=CAU'),
               ),
             ),
             Container(
