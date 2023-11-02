@@ -6,6 +6,9 @@ void main() {
 }
 
 class Medicamentos extends StatefulWidget{
+   const Medicamentos ({ super.key });
+
+  @override
   State<Medicamentos> createState()=> _Medicamentos();
 }
 
