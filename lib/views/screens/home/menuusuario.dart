@@ -7,6 +7,9 @@ void main() {
 }
 
 class MenuUsuario extends StatefulWidget{
+  const MenuUsuario ({ super.key });
+  
+  @override
   State<MenuUsuario> createState()=> _MenuUsuario();
 }
 
