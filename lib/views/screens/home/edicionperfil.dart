@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 void main() {
-  runApp(EdcionPerfil());
+  runApp(edicionperfil());
 }
 
-class EdicionPerfil extends StatefulWidget{
-  State<EdicionPerfil> createState()=> _Editarperfil();
+class edicionperfil extends StatefulWidget{
+   const edicionperfil ({ super.key });
+
+  @override
+  State<edicionperfil> createState()=> _Editarperfil();
 }
 
 class _Editarperfil extends State<EdicionPerfil>{
