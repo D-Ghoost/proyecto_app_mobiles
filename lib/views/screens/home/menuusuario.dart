@@ -3,14 +3,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/src/services/asset_bundle.dart';
 
 void main() {
-  runApp(menuusuario());
+  runApp(MenuUsuario());
 }
 
-class menuusuario extends StatefulWidget{
-  State<menuusuario> createState()=> _MenuUsuario();
+class MenuUsuario extends StatefulWidget{
+  State<MenuUsuario> createState()=> _MenuUsuario();
 }
 
-class _MenuUsuario extends State<menuusuario>{
+class _MenuUsuario extends State<MenuUsuario>{
 
   @override
   Widget build (BuildContext context){
