@@ -28,6 +28,17 @@ class _HomeState extends State<Login> {
         ),
         Column(
           children: [
+            TextButton(
+                style: ButtonStyle(
+                  foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child:
+                const Icon(Icons.arrow_back),
+
+              ),
             Container(
               alignment: Alignment.center,
               margin: const EdgeInsets.only(top: 30),
