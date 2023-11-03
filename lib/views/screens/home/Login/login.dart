@@ -74,6 +74,14 @@ class _HomeState extends State<Login> {
                       }
                   ),
                   _LoginVM.getIsValidPass() ? SizedBox(height: 10,) : Text('error'),
+                  FloatingActionButton.extended(
+                    heroTag: "btnEd1",
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    onPressed: (){},
+                    label: const Text("Listo"),
+                  )
                 ],
               ),
             ),
