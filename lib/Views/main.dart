@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Home',
       theme: ThemeData(fontFamily: 'SpartanMB'),
       home: MyHomePage(),
     );
@@ -24,13 +24,13 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Demo'),
+        title: Text('Home'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/1.png'),
+            Image.asset('assets/images/1.png'),
             Container(
               margin: EdgeInsets.only(bottom: 20),
               child: Text(
